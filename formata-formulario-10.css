@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+body {
+    font-family: Poppins;
+    font-size: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #FBFCFF;
+    margin: 0;
+    background-color: #3485ff;
+    padding: 1rem;
+    box-shadow: 0 0 5px 5px rgba(145, 173, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    grid-template-areas: 'left right';
+}
+
+form {
+    display: flex;
+    grid-area: right;
+    margin: left;
+    margin-left: 0;
+    margin-right: auto;
+    min-width: 750px;
+}
+
+img {
+    grid-area: left;
+    margin-right: 0;
+    margin-left: auto;
+    height: 700px;
+    width: 700px;
+}
+
+fieldset {
+    display: block;
+    width: 50%;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(145, 173, 255, 0.8);
+    padding: 25px;
+    padding-bottom: 5px;
+    border: 1px solid #3485ff;
+}
+
+legend {
+    color: #3485ff;
+}
+
+.campo-valor {
+    display: flex;
+    align-items: left;
+    margin-bottom: 1.5rem;
+}
+
+
+input {
+    font-size: 20px;
+    width: 5%;
+}
+
+input[name="valor-compra"] {
+    width: 100px;
+    margin-left: 1rem;
+}
+
+
+button {
+    font-family: Poppins;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 0.8rem;
+    border: none;
+    height: 2.5rem;
+    width: 25rem;
+    background: #3485ff;
+    color: #FBFCFF;
+
+    transition: filter .2s;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+p {
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(200, 200, 200, 0.4);
+}
+
+span {
+    color: #3485ff;
+    font-weight: bold;
+}

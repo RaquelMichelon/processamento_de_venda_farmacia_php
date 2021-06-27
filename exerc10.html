@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Programação WEB com PHP</title>
+    <link rel="stylesheet" href="formata-formulario-10.css">
+</head>
+<body>
+    <header>
+        <h1> Processando a venda de produtos farmacêuticos </h1>        
+    </header>
+    
+    <main>
+        <div class="content">
+            <img src="./assets/image-capa.png" alt="farmácia">
+
+            <form action="exerc10.php" method="post">
+                <fieldset>
+                    <legend> Dados da Compra </legend>
+                    
+                    <div class="campo-valor">
+                        <label> Valor da compra: </label> <br>
+                        <input type="number" name="valor-compra" autofocus step="0.01"> <br>
+                    </div>
+                    
+        
+                    <label> Faixa etária do cliente: </label> <br>
+                    <input type="radio" name="faixa-etaria" value="Menos-55"> Menos de 55 anos <br>
+                    <input type="radio" name="faixa-etaria" value="De-55-a-70"> Entre 55 e 70 anos <br>
+                    <input type="radio" name="faixa-etaria" value="Mais-70"> Acima de 70 anos <br> <br>
+        
+                    <input type="checkbox" name="fidelidade" value="Fidelidade"> Pagamento com Cartão Fidelidade <br>
+        
+        
+                    <button name="enviar-dados"> Calcular Valor Final da Compra </button>
+                </fieldset>
+            </form>
+        </div>
+        
+    </main> 
+
+</body>
+</html>
